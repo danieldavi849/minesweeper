@@ -1,0 +1,131 @@
+.body{
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-items: center;
+    align-items: center;
+    font-weight: bold;
+}
+.h1{
+         text-align:center;
+         color: rgb(255, 255, 255);
+         font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         background-color: #56688A;
+         width: 352px;
+         font-size: 12px;
+         padding-top: 5px;
+         padding-bottom: 5px;
+         border-radius: 5px;
+         margin: auto;
+         
+    
+}
+
+#instructions{
+    display:flex;
+    width: 332px;
+    padding-inline: 10px;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+  
+    
+}
+#btn-restart{
+    background-color: #EE6C4D;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    font-weight: bold;
+    
+}
+#btn-restart:hover{
+    background-color: #EC5732;
+}
+.map{
+    width: 352px;/*20*16 + margin 1px=2*16 */
+    height: 352px;/*20*16 + margin 1px=2*16 */
+    display: grid;
+    grid-template-columns: repeat(16,22px);
+    grid-gap:0px;
+    background-color: #E0FBFC;
+    padding: 3px;
+    border-radius: 5px;
+    margin: auto;
+   
+}
+#topsection{
+    margin-bottom: 10px;
+}
+#loser{
+    background-color: #E03D15;
+    
+}
+.block-container{
+    counter-increment: my-counter;
+    height: 20px;
+    width: 20px;
+    margin: 1px;
+    padding: 0px;  /* Adds padding to the cells */
+    border-radius: 3px;  /* Adds rounded corners to the cells */
+    box-shadow: 0.5px 0.5px 1px 0.2px #28414138;
+    justify-content: center;
+    align-content: center;
+     text-align: center;
+     text-justify: center;
+}
+
+.block-container:not(.clicked).block-container:hover {
+    opacity: 0.5;
+}
+.block-container:active{
+    opacity: 1;
+}
+
+.clicked{
+    filter:saturate(30%) ;
+
+    
+}
+.flag{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 3px;
+    background-size: calc(100% - 5px) calc(100% - 5px); /* shrink the size of the image by 20px on all sides */
+
+    background-image:  url("file:///C:/Users/mooki/OneDrive/שולחן העבודה/minesweeper/flag.png");
+}
+
+#loserContain{
+    margin-top: 10px;
+}
+#rightclick{
+    font-size: 10px;
+}
+.hasNumber{
+    
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 16.5px;
+    font-family:  Helvetica, sans-serif;
+    user-select: none;
+    text-shadow: 0.5px 0.5px 1px #00000046;
+}
+
+
+.dark {
+    background-color: #5B9DC2;
+ 
+}
+.light {
+    background-color: #79AECD;
+
+
+  }
+.block-container.mine {
+    /*background-color: rgb(209, 64, 64);*/
+    display: block;
+  }
+  .block-container.highlighted {
+    background-color: #E03D15;
+  }
